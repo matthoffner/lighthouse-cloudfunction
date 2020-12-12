@@ -1,0 +1,28 @@
+{
+  "name": "lighthouse-cloudfunction",
+  "version": "1.0.0",
+  "description": "Simple example of lighthouse with a cloud function using puppeteer",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @google-cloud/functions-framework --target=lighthouse"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthoffner/lighthouse-cloudfunction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthoffner/lighthouse-cloudfunction/issues"
+  },
+  "homepage": "https://github.com/matthoffner/lighthouse-cloudfunction#readme",
+  "dependencies": {
+    "chrome-launcher": "^0.13.4",
+    "lighthouse": "^6.5.0",
+    "puppeteer": "^5.5.0"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.7.1"
+  }
+}
