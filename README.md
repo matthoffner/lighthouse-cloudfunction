@@ -12,4 +12,4 @@ gcloud functions deploy lighthouse --runtime nodejs12 --trigger-http --memory=20
 
 Staging environments may require a static IP to be allowlisted. This is pretty straightforward with this guide:
 
-![AlvarDev: cloud functions static ip guide](https://github.com/AlvarDev/functions-static-ip)
+[AlvarDev: cloud functions static ip guide](https://github.com/AlvarDev/functions-static-ip)
