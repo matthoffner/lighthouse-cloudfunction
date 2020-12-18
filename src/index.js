@@ -1,4 +1,4 @@
-const lighthouse = require("lighthouse");
+const lighthouse = require('lighthouse');
 const puppeteer = require('puppeteer');
 
 const init = async () => await puppeteer.launch({
