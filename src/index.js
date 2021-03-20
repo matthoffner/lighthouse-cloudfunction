@@ -1,9 +1,9 @@
-const lighthouse = require("lighthouse");
+const lighthouse = require('lighthouse');
 const puppeteer = require('puppeteer');
 
 const init = async () => await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--save-assets'],
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-web-security', '--save-assets'],
     // executablePath: "/Applications/Chromium.app/Contents/MacOS/Chromium",
 });
 
@@ -11,7 +11,8 @@ const handle = async (url) => {
     const browser = await init();
     const res = await lighthouse(url, {
         port: new URL(browser.wsEndpoint()).port,
-        output: 'html'
+        output: 'html',
+        extraHeaders: { 'DNT': '1' }
     });
     browser.close();
     return res.report;
