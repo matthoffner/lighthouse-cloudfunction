@@ -3,7 +3,8 @@ const puppeteer = require('puppeteer');
 
 const init = async () => await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--save-assets'],
+    // executablePath: "/Applications/Chromium.app/Contents/MacOS/Chromium",
 });
 
 const handle = async (url) => {

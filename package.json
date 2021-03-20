@@ -18,9 +18,8 @@
   },
   "homepage": "https://github.com/matthoffner/lighthouse-cloudfunction#readme",
   "dependencies": {
-    "chrome-launcher": "^0.13.4",
-    "lighthouse": "^6.5.0",
-    "puppeteer": "^5.5.0"
+    "lighthouse": "^7.0.0",
+    "puppeteer": "^8.0.0"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^1.7.1"
